@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlTag">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanzeel Nursery & Primary School - Home</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ======== PRELOADER ======== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-logo">
+                <img src="images/logo-placeholder.png" alt="Tanzeel School" class="loader-logo-img" />
+            </div>
+            <p class="loader-text mt-3 fw-bold">Tanzeel School</p>
+        </div>
+    </div>
+
+    <!-- ======== TOP BAR ======== -->
+    <div class="top-bar py-2 d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4 text-white">
+                <span><i class="bi bi-telephone-fill me-2 text-warning"></i> <span class="lang-phone">+255 777 123 456</span></span>
+                <span><i class="bi bi-envelope-fill me-2 text-warning"></i> <span class="lang-email">info@tanzeelschool.co.tz</span></span>
+                <span><i class="bi bi-geo-alt-fill me-2 text-warning"></i> <span class="lang-address">Kati District, Zanzibar</span></span>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="#" class="text-white text-decoration-none social-icon-top"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white text-decoration-none social-icon-top"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white text-decoration-none social-icon-top"><i class="bi bi-youtube"></i></a>
+                <button id="langToggle" class="btn btn-warning btn-sm fw-bold px-3 rounded-pill">
+                    <i class="bi bi-globe me-1"></i> <span id="langLabel">Kiswahili</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== NAVBAR WITH LOGO ======== -->
+    <nav class="navbar navbar-expand-lg glass-navbar shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <!-- ====== LOGO IN HEADER ====== -->
+                <div class="brand-logo-wrapper">
+                    <img src="images/logo.png" alt="Tanzeel School Logo" class="brand-logo" id="headerLogo" />
+                    <!-- Fallback if logo not found -->
+                    <div class="brand-icon-fallback d-none">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                </div>
+                <div class="brand-text ms-2">
+                    <span class="lang-school-name">Tanzeel School</span>
+                    <small class="d-block text-warning" style="font-size: 0.5rem; letter-spacing: 2px; opacity: 0.8;">
+                        <span class="lang-brand-tag">NURSERY &amp; PRIMARY</span>
+                    </small>
+                </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house-fill me-1"></i>
+                            <span class="lang-nav-home">Home</span>
+                        </a>
+                    </li>
+                    
+                    <!-- ABOUT US with DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-info-circle-fill me-1"></i>
+                            <span class="lang-nav-about">About Us</span>
+                            <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" aria-labelledby="aboutDropdown">
+                            <li>
+                                <a class="dropdown-item" href="about.html#history">
+                                    <i class="bi bi-clock-history me-2"></i>
+                                    <span class="lang-drop-history">Our History</span>
+                                    <span class="dropdown-badge">NEW</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about.html#mission">
+                                    <i class="bi bi-bullseye me-2"></i>
+                                    <span class="lang-drop-mission">Mission & Vision</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about.html#staff">
+                                    <i class="bi bi-people me-2"></i>
+                                    <span class="lang-drop-staff">Our Staff</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="about.html#facilities">
+                                    <i class="bi bi-building me-2"></i>
+                                    <span class="lang-drop-facilities">Facilities</span>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="about.html#achievements">
+                                    <i class="bi bi-trophy me-2"></i>
+                                    <span class="lang-drop-achievements">Achievements</span>
+                                    <span class="dropdown-badge bg-success">Award</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- ACADEMICS with DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="acadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-book-fill me-1"></i>
+                            <span class="lang-nav-academics">Academics</span>
+                            <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" aria-labelledby="acadDropdown">
+                            <li>
+                                <a class="dropdown-item" href="academics.html#nursery">
+                                    <i class="bi bi-stars me-2"></i>
+                                    <span class="lang-drop-nursery">Nursery Program</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="academics.html#primary">
+                                    <i class="bi bi-book me-2"></i>
+                                    <span class="lang-drop-primary">Primary Program</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="academics.html#subjects">
+                                    <i class="bi bi-grid me-2"></i>
+                                    <span class="lang-drop-subjects">Subjects Offered</span>
+                                    <span class="dropdown-badge">8</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="academics.html#curriculum">
+                                    <i class="bi bi-diagram-3 me-2"></i>
+                                    <span class="lang-drop-curriculum">Curriculum</span>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="academics.html#islamic">
+                                    <i class="bi bi-star me-2"></i>
+                                    <span class="lang-drop-islamic">Islamic Studies</span>
+                                    <span class="dropdown-badge bg-warning text-dark">Featured</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- EVENTS with DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-calendar-event-fill me-1"></i>
+                            <span class="lang-nav-events">Events</span>
+                            <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" aria-labelledby="eventsDropdown">
+                            <li>
+                                <a class="dropdown-item" href="events.html#upcoming">
+                                    <i class="bi bi-calendar-plus me-2"></i>
+                                    <span class="lang-drop-upcoming">Upcoming Events</span>
+                                    <span class="dropdown-badge bg-danger">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="events.html#calendar">
+                                    <i class="bi bi-calendar3 me-2"></i>
+                                    <span class="lang-drop-calendar">School Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="events.html#gallery">
+                                    <i class="bi bi-images me-2"></i>
+                                    <span class="lang-drop-gallery">Event Gallery</span>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="events.html#sports">
+                                    <i class="bi bi-dribbble me-2"></i>
+                                    <span class="lang-drop-sports">Sports Events</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- RESULTS with DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resultsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-trophy-fill me-1"></i>
+                            <span class="lang-nav-results">Results</span>
+                            <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown" aria-labelledby="resultsDropdown">
+                            <li>
+                                <a class="dropdown-item" href="results.html#2025">
+                                    <i class="bi bi-award me-2"></i>
+                                    <span class="lang-drop-2025">2025 Results</span>
+                                    <span class="dropdown-badge bg-success">Latest</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="results.html#2024">
+                                    <i class="bi bi-award me-2"></i>
+                                    <span class="lang-drop-2024">2024 Results</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="results.html#analysis">
+                                    <i class="bi bi-graph-up me-2"></i>
+                                    <span class="lang-drop-analysis">Performance Analysis</span>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="results.html#national">
+                                    <i class="bi bi-bar-chart me-2"></i>
+                                    <span class="lang-drop-national">National Rankings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <!-- CONTACT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            <span class="lang-nav-contact">Contact</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO SECTION ======== -->
+    <section class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="hero-gradient-overlay"></div>
+        
+        <div class="container text-white text-center text-md-start position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1200">
+                    <span class="badge-hero mb-3 d-inline-block">
+                        <i class="bi bi-star-fill text-warning me-1"></i>
+                        <span class="lang-hero-badge">Excellence in Education</span>
+                        <i class="bi bi-star-fill text-warning ms-1"></i>
+                    </span>
+                    <h1 class="display-1 fw-bold hero-title">
+                        <span class="lang-hero-title">Welcome to</span><br />
+                        <span class="text-warning lang-hero-sub">Tanzeel School</span>
+                    </h1>
+                    <p class="lead my-4 lang-hero-desc" style="font-size: 1.3rem; line-height: 1.9;">
+                        Building a strong educational foundation for our children through Islamic values, 
+                        academic excellence, and modern teaching methodologies.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="about.html" class="btn btn-warning btn-lg fw-bold px-5 py-3 rounded-pill hero-btn-primary lang-hero-btn1">
+                            Explore More <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill hero-btn-secondary lang-hero-btn2">
+                            <i class="bi bi-telephone me-2"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame">
+                            <img src="https://via.placeholder.com/600x500/0d47a1/ffffff?text=Tanzeel+School" 
+                                 alt="Tanzeel School" class="img-fluid rounded-5 shadow-lg floating-img" />
+                        </div>
+                        <div class="floating-badge-1">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <span><strong>15+</strong> Years</span>
+                        </div>
+                        <div class="floating-badge-2">
+                            <i class="bi bi-trophy-fill text-warning"></i>
+                            <span><strong>Excellence</strong> Award</span>
+                        </div>
+                        <div class="floating-badge-3">
+                            <i class="bi bi-people-fill text-primary"></i>
+                            <span><strong>450+</strong> Students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator d-none d-md-block">
+            <span class="lang-scroll">Scroll Down</span>
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== IMPROVED STATISTICS SECTION (PREMIUM DESIGN) ======== -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="stats-header text-center mb-5" data-aos="fade-up">
+                <span class="stats-badge d-inline-block mb-3">
+                    <i class="bi bi-graph-up-arrow me-2"></i>
+                    <span class="lang-stats-badge">School at a Glance</span>
+                </span>
+                <h2 class="display-5 fw-bold lang-stats-title">Our Impact in Numbers</h2>
+                <p class="text-muted lead lang-stats-sub">The heartbeat of Tanzeel School in statistics</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Stat 1: Students -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card premium-stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-circle">
+                                <i class="bi bi-people-fill"></i>
+                                <div class="stat-icon-bg"></div>
+                            </div>
+                            <div class="stat-content">
+                                <h2 class="stat-number"><span class="counter" data-target="450">0</span><span class="stat-plus">+</span></h2>
+                                <p class="stat-label lang-stat-students-label">Students Enrolled</p>
+                            </div>
+                            <div class="stat-progress-bar-wrapper">
+                                <div class="stat-progress-track">
+                                    <div class="stat-progress-fill" style="width: 92%;">
+                                        <span class="stat-progress-label">92%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-trend">
+                                <i class="bi bi-arrow-up-short text-success"></i>
+                                <span class="text-success">+12% this year</span>
+                            </div>
+                            <div class="stat-decoration">
+                                <div class="stat-circle-1"></div>
+                                <div class="stat-circle-2"></div>
+                                <div class="stat-circle-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stat 2: Teachers -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card premium-stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-circle">
+                                <i class="bi bi-person-workspace"></i>
+                                <div class="stat-icon-bg" style="background: linear-gradient(135deg, #2e7d32, #66bb6a);"></div>
+                            </div>
+                            <div class="stat-content">
+                                <h2 class="stat-number"><span class="counter" data-target="30">0</span><span class="stat-plus">+</span></h2>
+                                <p class="stat-label lang-stat-teachers-label">Qualified Teachers</p>
+                            </div>
+                            <div class="stat-progress-bar-wrapper">
+                                <div class="stat-progress-track">
+                                    <div class="stat-progress-fill" style="width: 85%; background: linear-gradient(90deg, #2e7d32, #66bb6a);">
+                                        <span class="stat-progress-label">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-trend">
+                                <i class="bi bi-arrow-up-short text-success"></i>
+                                <span class="text-success">+5 new this year</span>
+                            </div>
+                            <div class="stat-decoration">
+                                <div class="stat-circle-1"></div>
+                                <div class="stat-circle-2"></div>
+                                <div class="stat-circle-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stat 3: Classrooms -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card premium-stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-circle">
+                                <i class="bi bi-building"></i>
+                                <div class="stat-icon-bg" style="background: linear-gradient(135deg, #f57f17, #ffca28);"></div>
+                            </div>
+                            <div class="stat-content">
+                                <h2 class="stat-number"><span class="counter" data-target="20">0</span></h2>
+                                <p class="stat-label lang-stat-classrooms-label">Modern Classrooms</p>
+                            </div>
+                            <div class="stat-progress-bar-wrapper">
+                                <div class="stat-progress-track">
+                                    <div class="stat-progress-fill" style="width: 95%; background: linear-gradient(90deg, #f57f17, #ffca28);">
+                                        <span class="stat-progress-label">95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-trend">
+                                <i class="bi bi-arrow-up-short text-success"></i>
+                                <span class="text-success">Fully equipped</span>
+                            </div>
+                            <div class="stat-decoration">
+                                <div class="stat-circle-1"></div>
+                                <div class="stat-circle-2"></div>
+                                <div class="stat-circle-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stat 4: Years -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card premium-stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-circle">
+                                <i class="bi bi-award-fill"></i>
+                                <div class="stat-icon-bg" style="background: linear-gradient(135deg, #c62828, #ef5350);"></div>
+                            </div>
+                            <div class="stat-content">
+                                <h2 class="stat-number"><span class="counter" data-target="15">0</span><span class="stat-plus">+</span></h2>
+                                <p class="stat-label lang-stat-years-label">Years of Excellence</p>
+                            </div>
+                            <div class="stat-progress-bar-wrapper">
+                                <div class="stat-progress-track">
+                                    <div class="stat-progress-fill" style="width: 100%; background: linear-gradient(90deg, #c62828, #ef5350);">
+                                        <span class="stat-progress-label">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-trend">
+                                <i class="bi bi-trophy-fill text-warning"></i>
+                                <span class="text-warning">Since 2011</span>
+                            </div>
+                            <div class="stat-decoration">
+                                <div class="stat-circle-1"></div>
+                                <div class="stat-circle-2"></div>
+                                <div class="stat-circle-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== ABOUT PREVIEW ======== -->
+    <section class="about-preview py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrapper position-relative">
+                        <img src="https://via.placeholder.com/600x450/1565c0/ffffff?text=Tanzeel+School+Building" 
+                             class="img-fluid rounded-4 shadow-lg" alt="About Tanzeel" />
+                        <div class="about-experience-badge">
+                            <span class="fw-bold display-6">15</span>
+                            <span class="d-block">Years</span>
+                            <span class="d-block small">of Excellence</span>
+                        </div>
+                        <div class="about-play-btn">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="badge-section mb-3 d-inline-block">
+                        <span class="lang-about-badge">📖 About Us</span>
+                    </span>
+                    <h2 class="fw-bold display-5 lang-about-title">Nurturing Minds, Building Futures</h2>
+                    <p class="text-muted lead mt-3 lang-about-desc1">
+                        Tanzeel Nursery &amp; Primary School is a premier educational institution located 
+                        in Kati District, Zanzibar. We provide a safe, nurturing, and stimulating learning 
+                        environment that fosters holistic development.
+                    </p>
+                    <p class="text-muted lang-about-desc2">
+                        Our school is dedicated to academic excellence, Islamic moral values, and the development 
+                        of well-rounded individuals.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="about-feature">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span class="lang-about-li1">Qualified Staff</span>
+                            </div>
+                            <div class="about-feature mt-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span class="lang-about-li2">TIE Curriculum</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about-feature">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span class="lang-about-li3">Co-curricular</span>
+                            </div>
+                            <div class="about-feature mt-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <span class="lang-about-li4">Modern Facilities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary btn-lg mt-4 px-5 rounded-pill lang-about-btn">
+                        Read More <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== ACADEMICS PREVIEW ======== -->
+    <section class="academics-preview py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge-section mb-2 d-inline-block">
+                    <span class="lang-acad-badge">📚 Academics</span>
+                </span>
+                <h2 class="fw-bold display-5 lang-acad-title">Our Academic Programs</h2>
+                <p class="text-muted lead lang-acad-sub">Comprehensive curriculum aligned with TIE standards</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="100">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-primary-soft">
+                            <i class="bi bi-book display-3 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-1">Kiswahili</h5>
+                        <p class="text-muted small lang-acad-1-desc">National language instruction</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-primary">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="200">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-danger-soft">
+                            <i class="bi bi-book display-3 text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-2">English</h5>
+                        <p class="text-muted small lang-acad-2-desc">International language skills</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-danger">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="300">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-success-soft">
+                            <i class="bi bi-calculator display-3 text-success"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-3">Mathematics</h5>
+                        <p class="text-muted small lang-acad-3-desc">Logical reasoning &amp; problem solving</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-success">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="400">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-info-soft">
+                            <i class="bi bi-flask display-3 text-info"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-4">Science &amp; STEC</h5>
+                        <p class="text-muted small lang-acad-4-desc">Science, Technology &amp; Environment</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-info">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="100">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-warning-soft">
+                            <i class="bi bi-globe2 display-3 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-5">Social Studies</h5>
+                        <p class="text-muted small lang-acad-5-desc">History, geography &amp; civics</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-warning text-dark">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="200">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-danger-soft">
+                            <i class="bi bi-heart display-3 text-danger"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-6">Civic &amp; Moral</h5>
+                        <p class="text-muted small lang-acad-6-desc">Character &amp; values education</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-danger">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="300">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-secondary-soft">
+                            <i class="bi bi-tools display-3 text-secondary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-7">Vocational Skills</h5>
+                        <p class="text-muted small lang-acad-7-desc">Practical life skills</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-secondary">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="flip-up" data-aos-delay="400">
+                    <div class="acad-card p-4 rounded-4 shadow-sm text-center h-100">
+                        <div class="acad-icon bg-warning-soft">
+                            <i class="bi bi-star display-3 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-acad-8">Islamic &amp; Arabic</h5>
+                        <p class="text-muted small lang-acad-8-desc">Quran, Arabic &amp; Islamic values</p>
+                        <div class="acad-hover-overlay">
+                            <span class="badge bg-warning text-dark">Learn More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="academics.html" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill lang-acad-btn">
+                    View All Programs <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== RESULTS HIGHLIGHT ======== -->
+    <section class="results-preview py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="badge-section mb-3 d-inline-block">
+                        <span class="lang-results-badge">🏆 Exam Results</span>
+                    </span>
+                    <h2 class="fw-bold display-5 lang-results-title">2025 National Examination Results</h2>
+                    <p class="text-muted lead lang-results-desc">
+                        Official results from the Zanzibar Examination Council (BMZ) for Standard 7 graduates.
+                    </p>
+                    <div class="table-responsive mt-4">
+                        <table class="table table-bordered table-hover results-table">
+                            <thead>
+                                <tr>
+                                    <th><span class="lang-result-grade">Grade</span></th>
+                                    <th><span class="lang-result-count">Number of Students</span></th>
+                                    <th>Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="badge bg-primary px-3 py-2">A</span></td>
+                                    <td>0</td>
+                                    <td><div class="progress"><div class="progress-bar bg-primary" style="width: 0%">0%</div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-success px-3 py-2">B</span></td>
+                                    <td>0</td>
+                                    <td><div class="progress"><div class="progress-bar bg-success" style="width: 0%">0%</div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-warning text-dark px-3 py-2">C</span></td>
+                                    <td>2</td>
+                                    <td><div class="progress"><div class="progress-bar bg-warning" style="width: 66.7%">66.7%</div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-danger px-3 py-2">D</span></td>
+                                    <td>1</td>
+                                    <td><div class="progress"><div class="progress-bar bg-danger" style="width: 33.3%">33.3%</div></div></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge bg-secondary px-3 py-2">F</span></td>
+                                    <td>0</td>
+                                    <td><div class="progress"><div class="progress-bar bg-secondary" style="width: 0%">0%</div></div></td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="table-light fw-bold">
+                                <tr>
+                                    <td>Total Students</td>
+                                    <td>3</td>
+                                    <td>100%</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <a href="results.html" class="btn btn-success btn-lg mt-3 px-5 rounded-pill lang-results-btn">
+                        View Full Results <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="results-chart-wrapper">
+                        <div class="results-chart-bg">
+                            <img src="https://via.placeholder.com/550x450/28a745/ffffff?text=Tanzeel+Results+2025" 
+                                 class="img-fluid rounded-4 shadow-lg" alt="Results Chart" />
+                        </div>
+                        <div class="results-chart-badge">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="badge-circle bg-success"></div>
+                                <div><strong>Pass Rate</strong><br /><span class="text-success">100%</span></div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mt-2">
+                                <div class="badge-circle bg-warning"></div>
+                                <div><strong>Average Grade</strong><br /><span class="text-warning">C</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== EVENTS PREVIEW ======== -->
+    <section class="events-preview py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge-section mb-2 d-inline-block">
+                    <span class="lang-events-badge">📅 Upcoming Events</span>
+                </span>
+                <h2 class="fw-bold display-5 lang-events-title">School Events &amp; Activities</h2>
+                <p class="text-muted lead lang-events-sub">Stay updated with our school calendar</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="event-date-badge mb-3">
+                            <span class="badge bg-primary px-3 py-2 fs-6 lang-event-1-date">June 15, 2026</span>
+                        </div>
+                        <div class="event-icon-wrapper">
+                            <i class="bi bi-people display-3 text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-event-1-title">Parents &amp; Teachers Meeting</h5>
+                        <p class="text-muted lang-event-1-desc">
+                            An important gathering to discuss student progress, academic performance.
+                        </p>
+                        <div class="event-footer d-flex justify-content-between align-items-center">
+                            <span class="badge bg-light text-dark"><i class="bi bi-clock me-1"></i> 9:00 AM - 2:00 PM</span>
+                            <a href="events.html" class="text-primary text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="event-date-badge mb-3">
+                            <span class="badge bg-success px-3 py-2 fs-6 lang-event-2-date">June 30, 2026</span>
+                        </div>
+                        <div class="event-icon-wrapper">
+                            <i class="bi bi-trophy display-3 text-success"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-event-2-title">End of Year Graduation Ceremony</h5>
+                        <p class="text-muted lang-event-2-desc">
+                            Celebrating our Standard 7 graduates with a special ceremony.
+                        </p>
+                        <div class="event-footer d-flex justify-content-between align-items-center">
+                            <span class="badge bg-light text-dark"><i class="bi bi-clock me-1"></i> 8:00 AM - 5:00 PM</span>
+                            <a href="events.html" class="text-success text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="event-date-badge mb-3">
+                            <span class="badge bg-warning text-dark px-3 py-2 fs-6 lang-event-3-date">July 20, 2026</span>
+                        </div>
+                        <div class="event-icon-wrapper">
+                            <i class="bi bi-dribbble display-3 text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 lang-event-3-title">Inter-Class Sports Competition</h5>
+                        <p class="text-muted lang-event-3-desc">
+                            Annual sports day featuring athletics, football, netball.
+                        </p>
+                        <div class="event-footer d-flex justify-content-between align-items-center">
+                            <span class="badge bg-light text-dark"><i class="bi bi-clock me-1"></i> 7:00 AM - 6:00 PM</span>
+                            <a href="events.html" class="text-warning text-decoration-none">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="events.html" class="btn btn-danger btn-lg px-5 py-3 rounded-pill lang-events-btn">
+                    View All Events <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== TESTIMONIALS ======== -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge-section mb-2 d-inline-block bg-warning text-dark">
+                    <span>💬 What Parents Say</span>
+                </span>
+                <h2 class="fw-bold display-5 text-white">Parent Testimonials</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card p-4 rounded-4 bg-white text-dark h-100">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote display-1 text-primary opacity-25"></i>
+                        </div>
+                        <p class="lead fst-italic mt-3">
+                            "Tanzeel School has transformed my child's life. The teachers are dedicated, 
+                            and the Islamic values taught here are exactly what we wanted."
+                        </p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="testimonial-avatar">
+                                <i class="bi bi-person-circle display-4 text-primary"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">Mrs. Fatma Omar</h6>
+                                <small class="text-muted">Parent of Standard 5 Student</small>
+                                <div class="testimonial-stars">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card p-4 rounded-4 bg-white text-dark h-100">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote display-1 text-success opacity-25"></i>
+                        </div>
+                        <p class="lead fst-italic mt-3">
+                            "I'm impressed by the academic progress my son has made. The school's 
+                            focus on both academic and moral development is truly commendable."
+                        </p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="testimonial-avatar">
+                                <i class="bi bi-person-circle display-4 text-success"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">Mr. Hassan Juma</h6>
+                                <small class="text-muted">Parent of Standard 3 Student</small>
+                                <div class="testimonial-stars">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card p-4 rounded-4 bg-white text-dark h-100">
+                        <div class="testimonial-quote">
+                            <i class="bi bi-quote display-1 text-danger opacity-25"></i>
+                        </div>
+                        <p class="lead fst-italic mt-3">
+                            "The school environment is incredibly supportive. My daughter loves going 
+                            to school, and we've seen remarkable improvement in her confidence."
+                        </p>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="testimonial-avatar">
+                                <i class="bi bi-person-circle display-4 text-danger"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">Ms. Zainab Mohammed</h6>
+                                <small class="text-muted">Parent of Nursery Student</small>
+                                <div class="testimonial-stars">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CTA SECTION ======== -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="cta-box p-5 rounded-5 text-center text-white position-relative overflow-hidden" 
+                 style="background: linear-gradient(135deg, #0d1b4a 0%, #0d47a1 50%, #1565c0 100%);">
+                <div class="cta-particles"></div>
+                <div class="position-relative z-1">
+                    <h2 class="fw-bold display-5 lang-cta-title">Ready to Enroll Your Child?</h2>
+                    <p class="lead mb-4 lang-cta-desc">
+                        Join the Tanzeel family and give your child the best education in a nurturing Islamic environment.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="contact.html" class="btn btn-warning btn-lg fw-bold px-5 py-3 rounded-pill lang-cta-btn1">
+                            <i class="bi bi-person-plus me-2"></i> Enroll Now
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill lang-cta-btn2">
+                            <i class="bi bi-chat-dots me-2"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER WITH LOGO ======== -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <!-- ====== LOGO IN FOOTER ====== -->
+                    <div class="footer-brand d-flex align-items-center mb-3">
+                        <div class="footer-logo-wrapper">
+                            <img src="images/logo.png" alt="Tanzeel School Logo" class="footer-logo" id="footerLogo" />
+                            <div class="footer-logo-fallback d-none">
+                                <i class="bi bi-mortarboard-fill text-warning"></i>
+                            </div>
+                        </div>
+                        <div class="footer-brand-text ms-3">
+                            <h5 class="fw-bold mb-0 text-white">
+                                <span class="lang-footer-name">Tanzeel School</span>
+                            </h5>
+                            <small class="text-warning" style="font-size: 0.6rem; letter-spacing: 2px;">
+                                <span class="lang-footer-tag">NURSERY &amp; PRIMARY</span>
+                            </small>
+                        </div>
+                    </div>
+                    <p class="text-muted lang-footer-desc">
+                        Providing quality education rooted in Islamic values since 2011.
+                    </p>
+                    <div class="social-links d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-btn"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-btn"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle social-btn"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="fw-bold lang-footer-quick">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-decoration-none text-muted footer-link">About Us</a></li>
+                        <li><a href="academics.html" class="text-decoration-none text-muted footer-link">Academics</a></li>
+                        <li><a href="events.html" class="text-decoration-none text-muted footer-link">Events</a></li>
+                        <li><a href="results.html" class="text-decoration-none text-muted footer-link">Results</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-muted footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h6 class="fw-bold lang-footer-contact">Contact Info</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2 text-warning"></i>Kati District, Zanzibar</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2 text-warning"></i>+255 777 123 456</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2 text-warning"></i>info@tanzeelschool.co.tz</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2 text-warning"></i>Mon-Fri: 7:30 AM - 3:30 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold lang-footer-newsletter">Newsletter</h6>
+                    <p class="text-muted small">Subscribe to get updates from our school.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your Email" />
+                        <button class="btn btn-warning" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4" />
+            <div class="text-center text-muted small">
+                &copy; 2026 <span class="lang-footer-copy">Tanzeel Nursery &amp; Primary School. All Rights Reserved.</span>
+                <br />
+                <span class="lang-footer-designed">Designed with <i class="bi bi-heart-fill text-danger"></i> for Tanzeel School</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Particles JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
