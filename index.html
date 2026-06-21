@@ -24,6 +24,7 @@
             <div class="loader-ring"></div>
             <div class="loader-ring"></div>
             <div class="loader-ring"></div>
+            
             <div class="loader-logo">
                 <img src="logo/tanzeel_logo.png" alt="Tanzeel School" class="loader-logo-img" />
             </div>
@@ -54,10 +55,8 @@
     <nav class="navbar navbar-expand-lg glass-navbar shadow-lg sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <!-- ====== LOGO IN HEADER ====== -->
                 <div class="brand-logo-wrapper">
                     <img src="logo/tanzeel_logo.png" alt="Tanzeel School Logo" class="brand-logo" id="headerLogo" />
-                    <!-- Fallback if logo not found -->
                     <div class="brand-icon-fallback d-none">
                         <i class="bi bi-mortarboard-fill"></i>
                     </div>
@@ -74,60 +73,23 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto fw-semibold">
-                    
-                    <!-- HOME -->
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            <i class="bi bi-house-fill me-1"></i>
-                            <span class="lang-nav-home">Home</span>
-                        </a>
-                    </li>
-                    
-                    <!-- ABOUT US with DROPDOWN -->
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i><span class="lang-nav-home">Home</span></a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-info-circle-fill me-1"></i>
                             <span class="lang-nav-about">About Us</span>
                             <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
                         </a>
                         <ul class="dropdown-menu glass-dropdown" aria-labelledby="aboutDropdown">
-                            <li>
-                                <a class="dropdown-item" href="about.html#history">
-                                    <i class="bi bi-clock-history me-2"></i>
-                                    <span class="lang-drop-history">Our History</span>
-                                    <span class="dropdown-badge">NEW</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="about.html#mission">
-                                    <i class="bi bi-bullseye me-2"></i>
-                                    <span class="lang-drop-mission">Mission & Vision</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="about.html#staff">
-                                    <i class="bi bi-people me-2"></i>
-                                    <span class="lang-drop-staff">Our Staff</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="about.html#facilities">
-                                    <i class="bi bi-building me-2"></i>
-                                    <span class="lang-drop-facilities">Facilities</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="about.html"><i class="bi bi-grid me-2"></i><span class="lang-drop-overview">Overview</span></a></li>
+                            <li><a class="dropdown-item" href="about-history.html"><i class="bi bi-clock-history me-2"></i><span class="lang-drop-history">Our History</span><span class="dropdown-badge">NEW</span></a></li>
+                            <li><a class="dropdown-item" href="about-mission.html"><i class="bi bi-bullseye me-2"></i><span class="lang-drop-mission">Mission & Vision</span></a></li>
+                            <li><a class="dropdown-item" href="about-staff.html"><i class="bi bi-people me-2"></i><span class="lang-drop-staff">Our Staff</span></a></li>
+                            <li><a class="dropdown-item" href="about-facilities.html"><i class="bi bi-building me-2"></i><span class="lang-drop-facilities">Facilities</span></a></li>
                             <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="about.html#achievements">
-                                    <i class="bi bi-trophy me-2"></i>
-                                    <span class="lang-drop-achievements">Achievements</span>
-                                    <span class="dropdown-badge bg-success">Award</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="about-achievements.html"><i class="bi bi-trophy me-2"></i><span class="lang-drop-achievements">Achievements</span><span class="dropdown-badge bg-success">Award</span></a></li>
                         </ul>
                     </li>
-                    
-                    <!-- ACADEMICS with DROPDOWN -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="acadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-book-fill me-1"></i>
@@ -135,43 +97,14 @@
                             <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
                         </a>
                         <ul class="dropdown-menu glass-dropdown" aria-labelledby="acadDropdown">
-                            <li>
-                                <a class="dropdown-item" href="academics.html#nursery">
-                                    <i class="bi bi-stars me-2"></i>
-                                    <span class="lang-drop-nursery">Nursery Program</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="academics.html#primary">
-                                    <i class="bi bi-book me-2"></i>
-                                    <span class="lang-drop-primary">Primary Program</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="academics.html#subjects">
-                                    <i class="bi bi-grid me-2"></i>
-                                    <span class="lang-drop-subjects">Subjects Offered</span>
-                                    <span class="dropdown-badge">8</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="academics.html#curriculum">
-                                    <i class="bi bi-diagram-3 me-2"></i>
-                                    <span class="lang-drop-curriculum">Curriculum</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="academics.html#nursery"><i class="bi bi-stars me-2"></i><span class="lang-drop-nursery">Nursery Program</span></a></li>
+                            <li><a class="dropdown-item" href="academics.html#primary"><i class="bi bi-book me-2"></i><span class="lang-drop-primary">Primary Program</span></a></li>
+                            <li><a class="dropdown-item" href="academics.html#subjects"><i class="bi bi-grid me-2"></i><span class="lang-drop-subjects">Subjects Offered</span><span class="dropdown-badge">8</span></a></li>
+                            <li><a class="dropdown-item" href="academics.html#curriculum"><i class="bi bi-diagram-3 me-2"></i><span class="lang-drop-curriculum">Curriculum</span></a></li>
                             <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="academics.html#islamic">
-                                    <i class="bi bi-star me-2"></i>
-                                    <span class="lang-drop-islamic">Islamic Studies</span>
-                                    <span class="dropdown-badge bg-warning text-dark">Featured</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="academics.html#islamic"><i class="bi bi-star me-2"></i><span class="lang-drop-islamic">Islamic Studies</span><span class="dropdown-badge bg-warning text-dark">Featured</span></a></li>
                         </ul>
                     </li>
-                    
-                    <!-- EVENTS with DROPDOWN -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-calendar-event-fill me-1"></i>
@@ -179,36 +112,13 @@
                             <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
                         </a>
                         <ul class="dropdown-menu glass-dropdown" aria-labelledby="eventsDropdown">
-                            <li>
-                                <a class="dropdown-item" href="events.html#upcoming">
-                                    <i class="bi bi-calendar-plus me-2"></i>
-                                    <span class="lang-drop-upcoming">Upcoming Events</span>
-                                    <span class="dropdown-badge bg-danger">3</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="events.html#calendar">
-                                    <i class="bi bi-calendar3 me-2"></i>
-                                    <span class="lang-drop-calendar">School Calendar</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="events.html#gallery">
-                                    <i class="bi bi-images me-2"></i>
-                                    <span class="lang-drop-gallery">Event Gallery</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="events.html#upcoming"><i class="bi bi-calendar-plus me-2"></i><span class="lang-drop-upcoming">Upcoming Events</span><span class="dropdown-badge bg-danger">3</span></a></li>
+                            <li><a class="dropdown-item" href="events.html#calendar"><i class="bi bi-calendar3 me-2"></i><span class="lang-drop-calendar">School Calendar</span></a></li>
+                            <li><a class="dropdown-item" href="events.html#gallery"><i class="bi bi-images me-2"></i><span class="lang-drop-gallery">Event Gallery</span></a></li>
                             <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="events.html#sports">
-                                    <i class="bi bi-dribbble me-2"></i>
-                                    <span class="lang-drop-sports">Sports Events</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="events.html#sports"><i class="bi bi-dribbble me-2"></i><span class="lang-drop-sports">Sports Events</span></a></li>
                         </ul>
                     </li>
-                    
-                    <!-- RESULTS with DROPDOWN -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="resultsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-trophy-fill me-1"></i>
@@ -216,43 +126,14 @@
                             <i class="bi bi-chevron-down ms-1 dropdown-arrow"></i>
                         </a>
                         <ul class="dropdown-menu glass-dropdown" aria-labelledby="resultsDropdown">
-                            <li>
-                                <a class="dropdown-item" href="results.html#2025">
-                                    <i class="bi bi-award me-2"></i>
-                                    <span class="lang-drop-2025">2025 Results</span>
-                                    <span class="dropdown-badge bg-success">Latest</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="results.html#2024">
-                                    <i class="bi bi-award me-2"></i>
-                                    <span class="lang-drop-2024">2024 Results</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="results.html#analysis">
-                                    <i class="bi bi-graph-up me-2"></i>
-                                    <span class="lang-drop-analysis">Performance Analysis</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="results.html#2025"><i class="bi bi-award me-2"></i><span class="lang-drop-2025">2025 Results</span><span class="dropdown-badge bg-success">Latest</span></a></li>
+                            <li><a class="dropdown-item" href="results.html#2024"><i class="bi bi-award me-2"></i><span class="lang-drop-2024">2024 Results</span></a></li>
+                            <li><a class="dropdown-item" href="results.html#analysis"><i class="bi bi-graph-up me-2"></i><span class="lang-drop-analysis">Performance Analysis</span></a></li>
                             <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="results.html#national">
-                                    <i class="bi bi-bar-chart me-2"></i>
-                                    <span class="lang-drop-national">National Rankings</span>
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="results.html#national"><i class="bi bi-bar-chart me-2"></i><span class="lang-drop-national">National Rankings</span></a></li>
                         </ul>
                     </li>
-                    
-                    <!-- CONTACT -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="bi bi-envelope-fill me-1"></i>
-                            <span class="lang-nav-contact">Contact</span>
-                        </a>
-                    </li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill me-1"></i><span class="lang-nav-contact">Contact</span></a></li>
                 </ul>
             </div>
         </div>
